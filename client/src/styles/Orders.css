@@ -1,0 +1,121 @@
+.orders-container {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+  overflow: hidden;
+}
+
+.order-table {
+  background: rgba(139, 69, 19, 0.05);
+}
+
+.order-product {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 15px 0;
+  background: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.order-product:hover {
+  background: rgba(139, 69, 19, 0.05);
+  transform: translateX(5px);
+}
+
+.product-image-container {
+  width: 200px;  /* Increased from 150px */
+  height: 200px; /* Increased from 150px */
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.15);
+  margin-right: 20px;
+}
+
+.product-image {
+  max-width: 180px;  /* Added max-width */
+  max-height: 180px; /* Added max-height */
+  width: auto;       /* Changed to auto */
+  height: auto;      /* Changed to auto */
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+.product-details {
+  padding-left: 20px;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #8B4513;
+  margin-bottom: 8px;
+}
+
+.product-description {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  font-weight: 600;
+  color: #654321;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-image-container {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .product-image {
+    max-width: 130px;
+    max-height: 130px;
+  }
+}
+
+/* Status select styles */
+.status-select {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.status-select:hover {
+  border-color: #8B4513;
+}
+
+.status-select .ant-select-selector {
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+}
+
+/* Status colors */
+.ant-select-item-option-content {
+  font-weight: 500;
+}
+
+.ant-select-item-option[aria-selected="true"] {
+  background-color: rgba(139, 69, 19, 0.1);
+}
+
+.ant-select-item-option:hover {
+  background-color: rgba(139, 69, 19, 0.05);
+}

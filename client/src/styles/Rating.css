@@ -1,0 +1,66 @@
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars-container {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  display: inline-flex;
+  transition: all 0.3s ease;
+}
+
+.star-animate {
+  animation: scaleStar 0.3s ease forwards;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.star-filled {
+  color: #ffc107;
+  filter: drop-shadow(0 0 1px rgba(255, 193, 7, 0.3));
+}
+
+.star-half {
+  color: #ffc107;
+  filter: drop-shadow(0 0 1px rgba(255, 193, 7, 0.3));
+}
+
+.star-empty {
+  color: #e4e5e9;
+}
+
+.review-count {
+  color: #666;
+  font-size: 0.9rem;
+  opacity: 0;
+  animation: fadeIn 0.3s ease 0.5s forwards;
+}
+
+@keyframes scaleStar {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
